@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-image: url("night-town.jpg"); */
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+#bg{
+    position: absolute;
+    z-index: -100;
+    object-fit: contain;
+}
+.menu{
+    position: absolute;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.562);
+    height: 100vh ;
+    width: 20vw ;
+    border-radius: 0 60px 60px 0 ;
+
+}
+.menu h2,.main h1{
+    color: rgb(164, 132, 245);
+    padding: 20px 80px ;
+}
+.main{
+    background-color: #00000091;
+    position: absolute;
+    margin-left: 25vw ;
+    height: 100vh ;
+    width: 75vw;
+    border-radius: 80px 0px 0px 80px;  
+    right: 0px;
+}
+.main p{
+  color: white; 
+  font-size: 2em; 
+  padding: 15px;
+  overflow-y:scroll; 
+  height: 90vh;  
+}
+.main p::-webkit-scrollbar{
+     width: 0;
+}
+    .main h1{
+    color: rgb(164, 132, 245);
+    position: relative;
+    width: 75vw;
+}
+li{
+    color: #f7426f;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 30px;  
+    list-style: none;
+}
+.about{
+    position: relative;
+    top:90vh;
+    background-color: #fff;
+    height: 80vh;
+    width:100vw;
+    text-align: center;
+    padding: 30px 60px;
+    
+}
+.about p{
+    max-width: 950px;
+    font-size: 24px ;
+    font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.about h3 {
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    padding-bottom: 50px; 
+}
+.Buttons_line{
+    text-align: center;
+    margin: 0px auto;
+
+}
+.Buttons{
+    margin: 50px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+ .Buttons:hover{
+    cursor: pointer;
+    transform: scale(1.2);   
+    opacity: 1;
+} 
+    
+.Buttons_line{
+    display: inline-block ;
+} 
+#vk{
+    width: 150px;
+}
+#youtb{
+    width: 150px;
+}
+
+
+
+
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+  width: 100vw;
+  position: absolute;
+  left: 0px;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+  text-align: center;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+/* .about-bottom_block{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 0, 128, 0.726);
+    height: 200px;
+    width: 100vw;
+    
+} */

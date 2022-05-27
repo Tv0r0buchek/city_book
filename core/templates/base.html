@@ -1,0 +1,104 @@
+{%load static%}
+<html>
+
+<head>
+    <title>Справочник городов</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+    <img id="bg" src="{%static 'css/night-town.jpg'%}">
+    <div class="menu">
+        <h2>Список городов</h2>
+        <ul>
+            {%for city in cities_for_html %}
+            <li><a style="text-decoration: none; color: #f7426f;" href="{%url city %}">{{city}}</a></li>
+            {%endfor%}
+
+        </ul>
+    </div>
+
+    <div class="main">
+        <h1>Справочник по городу</h1>
+        <p style="color: white; font-size: 2em; padding: 15px;overflow-y:scroll; height: 90vh;">
+            {%block content%}
+            {%endblock%}
+        </p>
+    </div>
+
+    <div class="about">
+        <h3>О нас</h3>
+        <p>Наш сайт является крупнейшим спрвочником городов в мире.
+            Ежедневно мы загружаем новые статьи, исправляем старые.
+            Если вы хотите помочь нам в дальнейшем развитии то поделитесь им в социальных сетях.
+            Ниже вы можете перейти на наши офицальные аккаунты и узнать про наши намерения еще больше.
+        </p>
+        <div class="Buttons_line">
+            <div class="Buttons">
+                <a target="_blank" href="https://www.youtube.com/watch?v=-SlaxjfvVcI"><img id="youtb"
+                        src="{% static 'css\youtube.png' %}" alt="YouTube"></a>
+            </div>
+
+            <div class="Buttons">
+                <a target="_blank" href="https://vk.com/hw_school"><img id="vk" src="{% static 'css\vk.png' %}"
+                        alt="vk"></a>
+            </div>
+        </div>
+
+        <!-- <footer class="about-bottom_block">
+            
+        </footer> -->
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Company Name</h3>
+                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
+                                vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
+                                pulvinar dictum vel in justo.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a
+                                href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">Company Name © 2018</p>
+                </div>
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+        </div>
+        <script>
+            let imgBg = document.getElementById("bg");
+            window.addEventListener("scroll", function () {
+                let scrollY = window.scrollY;
+                if (scrollY < 500) {
+                    imgBg.style.top = 1 * scrollY + "px";
+                }
+
+            })
+        </script>
+</body>
+
+</html>
